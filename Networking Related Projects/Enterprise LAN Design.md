@@ -96,10 +96,8 @@ interface fastEthernet 0/1
 end
 write
 
-```
 
 ### B. Distribution Switch 1 (Dist-Switch1)
-
 ```ios
 Switch> enable
 Switch# configure terminal
@@ -145,10 +143,7 @@ interface range fastEthernet 0/7 - 8
 end
 write
 
-```
-
 ### C. Distribution Switch 2 (Dist-Switch2)
-
 ```ios
 Switch> enable
 Switch# configure terminal
@@ -194,10 +189,7 @@ interface range fastEthernet 0/7 - 8
 end
 write
 
-```
-
 ### D. Main Router (Main-Router)
-
 ```ios
 Router> enable
 Router# configure terminal
@@ -229,8 +221,6 @@ interface gigabitEthernet 0/0.30
 end
 write
 
-```
-
 ---
 
 ## 6. Test Results & Verification
@@ -250,8 +240,6 @@ Link aggregation status verified on core infrastructure switches to ensure failo
 ```text
 Core-Switch# show etherchannel summary
 
-```
-
 *Output showcases logical bundles active (`SU`) and structural member ports bundled correctly inside the Port-Channel interface.*
 
 ---
@@ -260,6 +248,5 @@ Core-Switch# show etherchannel summary
 
 The implementation of the Enterprise LAN project successfully demonstrates the core principles of modern structural networking. Through systematic testing and inbound ICMP simulation, all inter-departmental ping tests between the HR, IT, and Finance subnets achieved a 100% success rate. The configuration of VTP minimized administrative overhead, while the PAgP EtherChannel mechanism validated active load balancing and network redundancy. Additionally, enforced access layer security protocols successfully minimized unauthorized perimeter access. In conclusion, the finalized infrastructure meets all enterprise requirements, establishing a highly reliable, secure, fault-tolerant, and perfectly scalable corporate network environment.
 
-```
 
-```
+
