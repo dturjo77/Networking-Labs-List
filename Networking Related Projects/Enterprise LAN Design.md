@@ -1,8 +1,5 @@
-অবশ্যই! আপনার প্রজেক্টের সমস্ত কন্টেন্টকে GitHub-এর স্ট্যান্ডার্ড **Markdown (README.md)** ফরম্যাটে গুছিয়ে রেডি করে দিয়েছি। এটি দেখতে প্রফেশনাল লাগবে এবং কোড ব্লক, টেবিল ও ইমেজ হোল্ডারগুলো গিটহাবের রেন্ডারিং অনুযায়ী সেট করা হয়েছে।
 
-নিচের সম্পূর্ণ অংশটি কপি করে আপনার GitHub রিপোজিটরির `README.md` ফাইলে পেস্ট করে দিতে পারেন:
 
-```markdown
 # Enterprise LAN Design with Inter-VLAN Routing and EtherChannel
 
 An enterprise-grade network topology design deployed and simulated using **Cisco Packet Tracer**. This project focuses on building a scalable, resilient, and secure corporate infrastructure by integrating core Layer 2 and Layer 3 Cisco networking technologies.
@@ -28,7 +25,7 @@ The primary technical and operational objectives of this project are:
 
 > 💡 *Save your Packet Tracer topology screenshot inside your repository (e.g., name it `topology.png`) and update the path below.*
 
-![Network Topology](topology.png)
+<img width="1826" height="1006" alt="image" src="https://github.com/user-attachments/assets/4a763279-e7a8-4f61-9eee-f7499a85523d" />
 
 ---
 
@@ -62,7 +59,7 @@ The primary technical and operational objectives of this project are:
 ## 5. Configuration Commands for Each Device
 
 ### A. Core Switch (Core-Switch)
-```ios
+
 Switch> enable
 Switch# configure terminal
 Switch(config)# hostname Core-Switch
@@ -98,7 +95,7 @@ write
 
 
 ### B. Distribution Switch 1 (Dist-Switch1)
-```ios
+
 Switch> enable
 Switch# configure terminal
 Switch(config)# hostname Dist-Switch1
@@ -144,7 +141,7 @@ end
 write
 
 ### C. Distribution Switch 2 (Dist-Switch2)
-```ios
+
 Switch> enable
 Switch# configure terminal
 Switch(config)# hostname Dist-Switch2
@@ -190,7 +187,7 @@ end
 write
 
 ### D. Main Router (Main-Router)
-```ios
+
 Router> enable
 Router# configure terminal
 Router(config)# hostname Main-Router
@@ -227,6 +224,8 @@ write
 
 ### A. Ping Tests (Inter-VLAN Communication)
 
+<img width="782" height="111" alt="image" src="https://github.com/user-attachments/assets/82f13e2a-6792-4f9a-9d97-1d7d2c88b67b" />
+
 Inter-VLAN validation conducted via inbound ICMP packets within Cisco Packet Tracer. Tests confirmed successful line-rate transmission across all designated subnets:
 
 * **HR Subnet to IT Subnet:** Successful
@@ -237,16 +236,11 @@ Inter-VLAN validation conducted via inbound ICMP packets within Cisco Packet Tra
 
 Link aggregation status verified on core infrastructure switches to ensure failover capability:
 
-```text
-Core-Switch# show etherchannel summary
-
-*Output showcases logical bundles active (`SU`) and structural member ports bundled correctly inside the Port-Channel interface.*
+<img width="762" height="482" alt="image" src="https://github.com/user-attachments/assets/5177a073-c8d2-41fc-bbeb-baf08c53511c" />
 
 ---
 
 ## 7. Conclusion
 
 The implementation of the Enterprise LAN project successfully demonstrates the core principles of modern structural networking. Through systematic testing and inbound ICMP simulation, all inter-departmental ping tests between the HR, IT, and Finance subnets achieved a 100% success rate. The configuration of VTP minimized administrative overhead, while the PAgP EtherChannel mechanism validated active load balancing and network redundancy. Additionally, enforced access layer security protocols successfully minimized unauthorized perimeter access. In conclusion, the finalized infrastructure meets all enterprise requirements, establishing a highly reliable, secure, fault-tolerant, and perfectly scalable corporate network environment.
-
-
 
