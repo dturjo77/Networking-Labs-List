@@ -2,7 +2,6 @@
 
 # Enterprise LAN Design with Inter-VLAN Routing and EtherChannel
 
-An enterprise-grade network topology design deployed and simulated using **Cisco Packet Tracer**. This project focuses on building a scalable, resilient, and secure corporate infrastructure by integrating core Layer 2 and Layer 3 Cisco networking technologies.
 
 ---
 
@@ -58,7 +57,7 @@ The primary technical and operational objectives of this project are:
 
 ## 5. Configuration Commands for Each Device
 ```ios
-### A. Core Switch (Core-Switch)
+## A. Core Switch (Core-Switch)
 
 Switch> enable
 Switch# configure terminal
@@ -94,7 +93,7 @@ end
 write
 
 
-### B. Distribution Switch 1 (Dist-Switch1)
+## B. Distribution Switch 1 (Dist-Switch1)
 
 Switch> enable
 Switch# configure terminal
@@ -140,7 +139,7 @@ interface range fastEthernet 0/7 - 8
 end
 write
 
-### C. Distribution Switch 2 (Dist-Switch2)
+## C. Distribution Switch 2 (Dist-Switch2)
 
 Switch> enable
 Switch# configure terminal
@@ -186,7 +185,7 @@ interface range fastEthernet 0/7 - 8
 end
 write
 
-### D. Main Router (Main-Router)
+## D. Main Router (Main-Router)
 
 Router> enable
 Router# configure terminal
@@ -218,9 +217,7 @@ interface gigabitEthernet 0/0.30
 end
 write
 
-```ios
----
-
+```
 ## 6. Test Results & Verification
 
 ### A. Ping Tests (Inter-VLAN Communication)
