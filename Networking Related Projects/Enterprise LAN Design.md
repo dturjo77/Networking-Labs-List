@@ -57,7 +57,7 @@ The primary technical and operational objectives of this project are:
 ---
 
 ## 5. Configuration Commands for Each Device
-
+```ios
 ### A. Core Switch (Core-Switch)
 
 Switch> enable
@@ -218,6 +218,7 @@ interface gigabitEthernet 0/0.30
 end
 write
 
+```ios
 ---
 
 ## 6. Test Results & Verification
