@@ -4,7 +4,7 @@
 
 ## Platform Used: Cisco Packet Tracer
 
-*Date:* June 25, 2026
+### Date: June 25, 2026
 
 ---
 
