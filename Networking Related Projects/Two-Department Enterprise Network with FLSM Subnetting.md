@@ -1,8 +1,8 @@
 
 
-**Project Title:** Designing a Two-Department Enterprise Network with FLSM Subnetting
+Project Title:* Designing a Two-Department Enterprise Network with FLSM Subnetting
 
-**Platform Used:** Cisco Packet Tracer
+*Platform Used:* Cisco Packet Tracer
 *Date:* June 25, 2026
 
 ---
